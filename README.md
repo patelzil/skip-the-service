@@ -4,6 +4,14 @@ Skip The Service app allows homeowners to access any service as well as provide 
 It allows users to view selective service categories and read user reviews to find and book any service from beauty and wellness
 for men and women to home repairs and maintenance.
 
+## Contributors
+- The project has been transferred from gitlab. Below are the names of the contributors of the project:
+1. Zil Patel 
+2. Zelin Qiu
+3. Wesley Reynolds
+4. Joshua Thomas
+5. Yue Wan
+
 ## Vision Statement
 - Our [Vision](https://code.cs.umanitoba.ca/3350-winter-2021-a01/group-1/-/blob/master/docs/Vision.md)
 
