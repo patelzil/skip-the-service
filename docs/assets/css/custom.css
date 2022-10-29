@@ -1,0 +1,24 @@
+.column_2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.column_4 {
+  float: left;
+  width: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
