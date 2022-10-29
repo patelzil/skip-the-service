@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">ServicesApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="skip_the_service">SkipTheService</string>
+    <string name="no_account_register">No account? Register</string>
+    <string name="todo">TODO</string>
+    <string name="nothing_here_yet">Nothing Here Yet!</string>
+
+    <string name="Welcome">Welcome to our app!</string>
+
+    <!-- Strings used for service browse page -->
+    <string name="search_placeholder">Please enter a name</string>
+    <string name="All">All Items</string>
+    <string name="CategoryPrefix">Category: </string>
+    <string name="Category1">Cleaning</string>
+    <string name="Category2">Snow Removal</string>
+    <string name="Category3">Mechanic</string>
+    <string name="Category4">Health Services</string>
+    <string name="Category5">Pool Maintenance</string>
+    <string name="Category6">Lawn Care</string>
+    <string name="Category7">Gardening</string>
+    <string name="Category8">Plumbing</string>
+
+    <string name="create_business_account">Create Business Account</string>
+    <string name="create_user_account">Create User Account</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="register_user_account">Register User Account</string>
+    <string name="register">Register</string>
+
+    <string name ="logout">Logout</string>
+
+    <!-- Strings used for account pages -->
+    <string name="view_profile">View Profile</string>
+    <string name="profile">Profile</string>
+    <string name="done">DONE</string>
+    <string name="edit">EDIT</string>
+    <string name="change_password">Click to Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="enter_new_name">Enter New Name</string>
+    <string name="enter_new_email">Enter New Email</string>
+    <string name="enter_new_addr">Enter New Address</string>
+    <string name="go_back">BACK</string>
+    <string name="view">VIEW</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+
+    <!-- Strings used for order page -->
+    <string name="order">Order</string>
+    <string name="orderID">Order ID</string>
+    <string name="description">Description</string>
+    <string name="provider_name">Provider Name</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="schedule">Schedule</string>
+    <string name="long_text_demo">Here is a long text demo, which is supposed to have multiple lines.</string>
+    <string name="edit_description">click to edit</string>
+    <string name="my_orders">My Orders</string>
+    <string name="serviceName">Service Name</string>
+    <string name="confirm">Confirm Your Order</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="provider">Provider</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="location">Location</string>
+    <string name="business_profile">Business Profile</string>
+    <string name="change_pass">Change password</string>
+    <string name="back">back</string>
+    <string name="delete">Delete this order</string>
+
+    <!-- Strings used for business page -->
+    <string name="services_provided">SERVICES PROVIDED</string>
+    <string name="example_street">Example Street</string>
+    <string name="bus_profile">Business Profile</string>
+    <string name="back_button">back</string>
+    <string name="submitProfile">submit</string>
+    <string name="examplemart_info_com">submit</string>
+    <string name="example_mart">submit</string>
+    <string name="add_service">New Service</string>
+
+
+    <string name="favorite">My favorite</string>
+    <string name="skiptheservice">SkipTheService</string>
+    <string name="check_review">Check Review</string>
+    <string name="favorite_it">Favorite it</string>
+    <string name="report_it">Report it</string>
+    <string name="submit_report">Submit Report</string>
+    <string name="report">Report</string>
+
+    <!-- Strings used for new service description page -->
+    <string name="book">Book Now</string>
+    <string name="reason_for_report">Reason for report</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="ex_mart">Example Mart</string>
+
+    <!-- Strings used for new service page -->
+    <string name="add_service_header">Add New Service</string>
+    <string name="name_placeholder">Business Name</string>
+    <string name="location_placeholder">City Name</string>
+    <string name="description_placeholder">My business description…</string>
+    <string name="price_placeholder">$50.00</string>
+    <string name="register_service">Register Service</string>
+    <string name="required_fields">Fields marked with * are required</string>
+    <string name="asterisk">*</string>
+    <string-array name="categories">
+        <item>Cleaning</item>
+        <item>Snow Removal</item>
+        <item>Mechanic</item>
+        <item>Health Services</item>
+        <item>Pool Maintenance</item>
+        <item>Lawn Care</item>
+        <item>Gardening</item>
+        <item>Plumbing</item>
+    </string-array>
+    <!-- Strings used for edit service page -->
+    <string name="edit_service_header">Edit Service Details</string>
+    <string name="register_edit">Submit Changes</string>
+    <string name="delete_service">Delete Service</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>

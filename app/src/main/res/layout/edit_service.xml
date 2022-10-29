@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/requiredText3"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceName"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/newServiceCategory"
+            android:layout_toRightOf="@+id/newServiceCategory"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/asterisk"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/requiredText4"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceCategory"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/newServicePrice"
+            android:layout_toRightOf="@+id/newServicePrice"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/asterisk"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/requiredText5"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceDescription"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/newServiceLocation"
+            android:layout_toRightOf="@+id/newServiceLocation"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/asterisk"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_error"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="166dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="123dp"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginRight="122dp"
+            android:gravity="center"
+            android:text="@string/skiptheservice"
+            android:textColor="#303030"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="175dp"
+            android:background="@color/primaryRed"
+            android:onClick="registerClicked"
+            android:text="@string/register_edit"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/primaryRed" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="178dp"
+            android:background="@color/primaryRed"
+            android:onClick="cancelClicked"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/primaryRed" />
+
+        <Button
+            android:id="@+id/deleteServiceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/toolbar2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/primaryRed"
+            android:onClick="deleteClicked"
+            android:text="@string/delete_service"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:backgroundTint="@color/primaryRed" />
+
+        <TextView
+            android:id="@+id/newServiceName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/containerTitle"
+            android:layout_marginTop="35dp"
+            android:autofillHints=""
+            android:hint="@string/name_placeholder"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/newServiceCategory"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceName"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/newServicePrice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceCategory"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:hint="@string/price_placeholder"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/newServiceDescription"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServicePrice"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:hint="@string/description_placeholder"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/newServiceLocation"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceDescription"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:hint="@string/location_placeholder"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/containerTitle"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/toolbar2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="82dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/edit_service_header"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/requiredText"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newServiceLocation"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/required_fields"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_error"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="166dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="123dp"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginRight="122dp"
+            android:gravity="center"
+            android:text="@string/skiptheservice"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/checkReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="106dp"
+            android:background="@color/design_default_color_error"
+            android:text="@string/check_review"
+            app:backgroundTint="@color/design_default_color_error" />
+
+        <Button
+            android:id="@+id/leaveReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="38dp"
+            android:background="@color/design_default_color_error"
+            android:text="Leave Review"
+            app:backgroundTint="@color/design_default_color_error" />
+
+        <Button
+            android:id="@+id/favoriteButton"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="191dp"
+            android:layout_toEndOf="@+id/bookingButton"
+            android:layout_toRightOf="@+id/bookingButton"
+            android:background="@color/design_default_color_error"
+            android:text="@string/favorite_it"
+            app:backgroundTint="@color/design_default_color_error"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bookingButton"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="192dp"
+            android:background="@color/design_default_color_error"
+            android:onClick="startBooking"
+            android:text="@string/book"
+            app:backgroundTint="@color/design_default_color_error" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="63dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="601dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            android:onClick="reportClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flag" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="65dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="571dp"
+            android:text="@string/report_it" />
+
+        <TextView
+            android:id="@+id/serviceNameContent"
+            android:layout_width="263dp"
+            android:layout_height="63dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="122dp"
+            android:layout_marginRight="122dp"
+            android:layout_marginBottom="585dp"
+            android:text="TextView"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/catagoryContent"
+            android:layout_width="263dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="506dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/priceContent"
+            android:layout_width="263dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="117dp"
+            android:layout_marginRight="117dp"
+            android:layout_marginBottom="414dp"
+            android:text="TextView"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/locationContent"
+            android:layout_width="257dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="124dp"
+            android:layout_marginRight="124dp"
+            android:layout_marginBottom="297dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="216dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/design_default_color_error"
+            android:onClick="contactClick"
+            android:text="Contact"
+            app:backgroundTint="@color/design_default_color_error" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

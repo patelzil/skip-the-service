@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_error"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="@string/business_profile"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp">
+
+
+            <Button
+                android:id="@+id/submitEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newBusAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="240dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="60dp"
+                android:onClick="onClickSubmit"
+                android:text="@string/submitProfile"
+                android:background="@color/primaryRed"
+                app:backgroundTint="@color/design_default_color_error" />
+
+
+            <EditText
+                android:id="@+id/newBusAddress"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/busAddress"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/enter_new_addr"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="?android:attr/textColorHint" />
+
+            <TextView
+                android:id="@+id/busAddress"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newBusEmail"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/newBusEmail"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/bus_email"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/enter_new_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="?android:attr/textColorHint" />
+
+
+            <TextView
+                android:id="@+id/bus_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/unameContent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/email"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/unameContent"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/uname"
+                android:gravity="center_vertical"
+                android:text="@string/ex_mart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avatar"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/username"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="279dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:contentDescription="@string/todo"
+                android:visibility="visible"
+                android:src="@drawable/person_icon" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

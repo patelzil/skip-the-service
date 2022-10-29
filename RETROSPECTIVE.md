@@ -1,0 +1,18 @@
+RETROSPECTIVE
+==============
+As a team, we have made minor improvements from iteration 1 going into iteration 2, but this does not mean iteration 2 went perfectly. That being said, we have made a list of a few adjustments we can make to ensure that iteration 3 goes smoothly and some way that we can determine if these improvements were a success. We also discussed some things that we did well in iteration 2 coming into iteration 3. 
+
+After discussing with the team, we have come up with a few things that didn’t go well in iteration 2, notably:
+- We had poor testing 
+- We had issues with merges (methods getting deleted or overwritten) 
+- The lack of abstraction 
+- The failure to handle some exceptions being thrown 
+- Some poor planning for the iteration 
+
+Although there were a few more minor issues, we decided that these were some of the larger issues that really slowed down production and will lead to the most technical debt. 
+
+With these issues, we also discussed ways to improve and how to determine if these improvements were a success. To solve some of our issues with testing, as a team, we really wanted to enforce the use of Test Driven Development. With the use of TDD, we hope this solves most of our issues and we are aiming for 80%-90% test coverage before there are any merges to the dev branch. To deal with some of the problems with merging, we really wanted everyone on the team to be paying close attention to what they might be adding or deleting from the dev branch during a merge. To determine if a merge was a success, we are going to be doing final checks on the dev branch after merges. We want 100% of the files to be correct when a merge is complete. Understandable, this is not a viable solution to determine if the merge was done correctly, but using the fact that our project is still quite small, we feel that this will work in this instance. To solve the lack of abstraction, we are simply just enforcing the use of interfaces more heavily. As a team, we want 100% of calls between layers to be abstract. The failure to handle exceptions also comes down to better testing. We are focusing on the testing of methods to ensure that they can handle any possible exception that might be thrown. We consider this a success if all tests pass given any possible data that will throw an exception. Finally, we noticed that there was some confusion after the planning stages. To improve this, we have increased the amount of time we plan out an iteration to ensure that we have thought of all possible situations or problems we might run into. Although there isn’t exactly a way to properly measure if planning was a success, a way to get an idea of if the extended planning period helped was if there is little to no confusion once we have started coding. 
+
+Since we have discussed what didn’t go well in iteration 2, let’s finish with what did go well! One of the major issues we had in iteration 1 was the worksheet and other administration stuff we had left until last minute. It turned out that this would take us longer than expected to complete. So for iteration 2, we created issues for them and assigned members to complete specific administration work to keep on top of it. As well, we had better communication between team members. Whenever there was an issue, the team was quick to respond and help out which led to user stories and features being completed at a faster rate. 
+
+[Velocity Chart](https://code.cs.umanitoba.ca/3350-winter-2021-a01/group-1/-/blob/master/velocity.jpg)

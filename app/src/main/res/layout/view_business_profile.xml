@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_error"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="@string/business_profile"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp">
+
+
+            <Button
+                android:id="@+id/changePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busAddressContent"
+                android:layout_marginTop="15dp"
+                android:onClick="onClickPassword"
+                android:text="@string/change_pass"
+                android:textColor="@color/white"
+                android:background="@color/primaryRed"
+                app:backgroundTint="@color/primaryRed" />
+
+            <Button
+                android:id="@+id/newService"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/no_service_text"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="39dp"
+                android:layout_toEndOf="@+id/changePass"
+                android:layout_toRightOf="@+id/changePass"
+                android:background="@color/primaryRed"
+                android:onClick="onAddService"
+                android:text="@string/add_service"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryRed" />
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="0dp"
+                android:onClick="onClickEdit"
+                android:text="@string/edit"
+                android:background="@color/primaryRed"
+                app:backgroundTint="@color/design_default_color_error"
+                android:layout_marginStart="300dp"
+                android:layout_marginEnd="0dp" />
+
+            <Button
+                android:id="@+id/edit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/primaryRed"
+                android:onClick="onClickBack"
+                android:text="@string/back_button"
+                app:backgroundTint="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/no_service_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/service_title"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/service_title"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changePass"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/services_provided"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/busAddressContent"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/address"
+                android:gravity="center_vertical"
+                android:text="@string/example_street"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busEmailContent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/busEmailContent"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/business_email"
+                android:gravity="center_vertical"
+                android:text="@string/examplemart_info_com"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/business_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/unameContent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/email"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/unameContent"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/uname"
+                android:gravity="center_vertical"
+                android:text="@string/example_mart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avatar"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/username"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="279dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:contentDescription="@string/todo"
+                android:visibility="visible"
+                android:src="@drawable/person_icon" />
+
+            <ListView
+                android:id="@+id/services"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/service_title"
+                android:layout_marginTop="6dp" >
+            </ListView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

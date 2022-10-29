@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_error"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="@string/skip_the_service"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="fill_vertical"
+            android:text="@string/confirm"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm"
+            android:layout_marginTop="15dp"
+            android:text="@string/serviceName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/providerName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serviceNameContent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/provider"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm"
+            android:layout_marginStart="175dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/category"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provNameContent"
+            android:layout_marginStart="175dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/price"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provNameContent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/location"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/schedule"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationContent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/schedule"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/serviceNameContent"
+            android:layout_width="175dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/serviceName"
+            android:gravity="center_vertical"
+            android:text="@string/nothing_here_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/provNameContent"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/providerName"
+            android:gravity="center_vertical"
+            android:text="@string/nothing_here_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/catagoryContent"
+            android:layout_width="175dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/category"
+            android:layout_marginStart="175dp"
+            android:layout_marginLeft="175dp"
+            android:gravity="center_vertical"
+            android:text="@string/nothing_here_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/priceContent"
+            android:layout_width="175dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/price"
+            android:layout_marginStart="175dp"
+            android:layout_marginLeft="175dp"
+            android:gravity="center_vertical"
+            android:text="@string/nothing_here_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/locationContent"
+            android:layout_width="175dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/location"
+            android:gravity="center_vertical"
+            android:text="@string/nothing_here_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/schedule"
+            android:gravity="center_vertical"
+            android:text="@string/nothing_here_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_marginTop="10dp"
+            android:text="@string/description"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/description">
+
+            <EditText
+                android:id="@+id/descriptionContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/long_text_demo"
+                android:inputType="textMultiLine|text"
+                android:lineSpacingExtra="8sp"
+                android:maxLines="15"
+                android:textColor="@color/black"
+                android:textColorHint="?android:attr/textColorHint" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="235dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="630dp"
+            android:background="@color/design_default_color_error"
+            android:onClick="onClick"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/design_default_color_error" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="630dp"
+            android:background="@color/design_default_color_error"
+            android:onClick="onClick"
+            android:text="@string/go_back"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/design_default_color_error" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
